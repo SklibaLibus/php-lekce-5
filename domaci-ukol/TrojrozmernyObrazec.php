@@ -111,3 +111,15 @@ $koule = new Koule(6);
 vypisObjemPovrch($koule);
 $jehlan = new Jehlan(3, 4);
 vypisObjemPovrch($jehlan);
+
+/* alternativní zápis pro výpis jednotlivých hodnot
+
+$telesa = [
+    new Krychle(5),
+    new Kvadr(2, 3, 7),
+    new Koule(6),
+    new Jehlan(3, 4)
+];
+foreach ($telesa as $teleso) {
+    vypisObjemPovrch($teleso);
+}
